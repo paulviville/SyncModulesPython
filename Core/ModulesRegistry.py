@@ -8,8 +8,6 @@ class ModulesRegistry ( ModuleCore ):
 		addModule = "ADD_MODULE"
 		removeModule = "REMOVE_MODULE"
 
-
-
 	def __init__ ( self, outputFn ):
 		UUID = uuid.UUID(int=0)
 		ModuleCore.__init__( self, UUID )

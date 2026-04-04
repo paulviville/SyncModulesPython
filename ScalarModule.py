@@ -5,10 +5,11 @@ class ScalarModule ( ModuleCore ):
 	class commands ( ModuleCore.commands ):
 		updateValue = "UPDATE_VALUE"
 
-	_value = 0
 
 	def __init__( self, UUID ):
 		super( ).__init__( UUID )
+		
+		_value = 0
 
 		self.setOnCommand( self.commands.updateValue, lambda data: self.onUpdateValue( data ) )
 

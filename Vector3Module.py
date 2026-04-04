@@ -1,14 +1,15 @@
 from .Core.ModuleCore import ModuleCore
 
 class Vector3Module ( ModuleCore ):
-	type = "Vector3Module"
+	_type = "Vector3Module"
 	class commands ( ModuleCore.commands ):
 		updateVector = "UPDATE_VECTOR"
 
-	_vector = [ 0, 0, 0 ]
-
 	def __init__ ( self, UUID ):
 		super( ).__init__( UUID )
+
+		self._vector = [ 0, 0, 0 ]
+
 		self.setOnCommand( self.commands.updateVector, lambda data: self.onUpdateVector( data ) )
 		
 	def onUpdateVector ( self, data ):

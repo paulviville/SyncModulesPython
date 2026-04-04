@@ -5,8 +5,6 @@ class ModuleCore:
 	class commands:
 		setState = "SET_STATE"
 
-
-
 	def __init__( self, UUID ):
 		self._UUID = UUID
 		self._outputFn = None
@@ -64,7 +62,6 @@ class ModuleCore:
 		return { }
 
 	def setState ( self, state ):
-		print( "core setstate", self.UUID)
 		return
 	
 	def delete ( self ):
