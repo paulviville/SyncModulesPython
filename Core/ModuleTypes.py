@@ -4,6 +4,7 @@ from ..Vector3Module import Vector3Module
 from ..TransformModule import TransformModule
 from ..PrimitiveModule import PrimitiveModule
 from ..CameraModule import CameraModule
+from ..LineModule import LineModule
 
 ModuleTypes = {
 	"ModuleCore": ModuleCore,
@@ -11,5 +12,6 @@ ModuleTypes = {
 	"Vector3Module": Vector3Module,
 	"TransformModule": TransformModule,
 	"PrimitiveModule": PrimitiveModule,
-	"CameraModule": CameraModule
+	"CameraModule": CameraModule,
+	"LineModule": LineModule
 }
